@@ -1,0 +1,98 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(black ,grey);
+}
+
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.wrapper
+{
+    width: 25.5rem;
+    padding: 25px;
+    background:linear-gradient(#636161 ,#363535);
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.upload-box
+{
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    flex-direction: column;
+    /* background-color: aqua; */
+    border: 2px  dashed #c6a72a;
+ 
+}
+.wrapper.active .upload-box 
+{
+    border: none;
+}
+.wrapper.active .upload-box  img
+{
+    width:100% ;
+    height: 100%;
+    object-fit: cover;
+}
+ .wrapper.active .upload-box p
+{
+    display:none;
+
+}
+ .wrapper.active .upload-box i
+{
+    display:none;
+
+}
+
+
+.content
+{
+    margin-top: 18px;
+}
+.row
+{
+display: flex;
+justify-content: space-between;
+
+}
+.column
+{
+    padding:5px;
+   width:100%;
+   font-size: 17px;
+}
+.column input{
+
+    padding: 3px;
+    border-radius: 3px;
+    outline: none;
+    border:2px solid rgba(129, 123, 123, 0.704);
+}
+#ratio
+{
+    accent-color: green;
+}
+.download-btn
+{
+    background-color: rgb(67, 58, 240);
+    border: 2px solid burlywood;
+    width: 100%;
+    padding: 13px;
+}
